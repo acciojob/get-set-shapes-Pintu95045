@@ -6,15 +6,15 @@ class Rectangle {
   }
   
   get width() {
-    return this._width; // Fixed the typo
+    return this._width; 
   }
   
   get height() {
-    return this._height; // Corrected the getter syntax
+    return this._height; 
   }
 
   getArea() {
-    return this._width * this._height; // Returns the area of the rectangle
+    return this._width * this._height; 
   }
 }
 
