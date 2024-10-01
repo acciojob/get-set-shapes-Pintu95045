@@ -1,36 +1,63 @@
 //complete this code
-class Rectangle {}
 class Rectangle {
-  constructor(width, height) {
-    this._width = width;
-    this._height = height;
-  }
+	constructor(width, height){
+		this.width=width;
+		this.height=height;
+class Rectangle{
+	constructor(width, height) {
+		this.width = width;
+		this.height = height;
+}
+	get width(){
+		return this.width;
 
-class Square extends Animal {}
-  get width() {
-    return this._width;
-  }
+	get getWidth() {
+	    return this.width;
+}
+	get height(){
+		return this.height;
+	
+	get getHeight() {
+	    return this.height;
+}
 
-  get height() {
-    return this._height;
-  }
+	set width(newWidth){
+		this.width=newWidth;
+	set setWidth(width) {
+		this.width  = width;
+}
+	get height(newHeight){
+		this.height=newHeight;
 
-  getArea() {
-    return this._width * this._height;
-  }
+	set setHeight(height) {
+		this.height  = height;
+}
+
+	getArea(){
+		return this.width*this.height;
+	getArea() {
+		return this.width  * this.height;
+}
 }
 
 class Square extends Rectangle {
-  constructor(side) {
-    super(side, side);
-    this._side = side;
-  }
+	constructor(side){
+		 super(side,side);
+		 this.side=side;
+	constructor(side) {
+		super(side, side);
+        this.side = side;
+}
 
-  getPerimeter() {
-    return 4 * this._side;
-  }
+	getPerimeter(){
+		return 4*this.side;
+	
+	getPerimeter() {
+		return 4 * this.side;
+}
 }
 
 // Do not change the code below this line
 window.Rectangle = Rectangle;
+window.Square = Square;
 window.Square = Square;
